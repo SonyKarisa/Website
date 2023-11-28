@@ -1,0 +1,389 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: #FFF1DC;
+    min-height: 100vh;
+    margin: 10px;
+}
+
+:root {
+    --backgroundColor: #342809;
+    --fontColor: #FB9902;
+}
+
+header {
+    inline-size: 100%;
+    text-align: center;
+    background-color: var(--backgroundColor);
+    color: #e0e0e0;
+    padding: 2px 0;
+}
+
+header>img {
+    height: 5vmax;
+    width: 14vmax;
+}
+
+header>h1 {
+    font-size: 1.4em;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    padding-left: 25vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    background-color: white;
+}
+
+.hcolorone {
+    color: whitesmoke;
+}
+
+.hcolortwo {
+    color: var(--fontColor);
+}
+
+main {
+    max-height: 80%;
+}
+
+#wrapper>nav {
+    inline-size: 100%;
+    background-color: white;
+    padding: 2px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+a::selection {
+    color: var(--fontColor);
+    background-color: white;
+}
+
+nav a {
+
+    color: var(--backgroundColor);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+nav ul li {
+
+    display: inline-block;
+    padding-inline: 1em;
+    list-style-type: none;
+}
+
+.mobile {
+    display: none;
+}
+
+section p {
+    font-size: 1em;
+    max-width: 82%;
+}
+
+section img:nth-child(2) {
+    width: 15vw;
+    height: 15vw;
+    float: right;
+    border: 5px ridge var(--backgroundColor);
+}
+
+section img:nth-child(4) {
+    margin-top: 12.5vw;
+    margin-left: 2px;
+    height: 20vw;
+    width: 40vw;
+    border: 5px ridge var(--backgroundColor);
+
+}
+
+main nav {
+    display: flex;
+    justify-content: center;
+}
+
+main nav ul li a {
+    border: #342809 solid 5px;
+    background-color: white;
+}
+
+figure img {
+    border: 10px ridge var(--backgroundColor);
+}
+
+footer nav {
+    background-color: var(--backgroundColor);
+    padding-block: 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+footer nav a {
+    color: var(--fontColor);
+    text-decoration: underline;
+    font-size: 0.8em;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: var(--backgroundColor);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+footer p a[target="_blank"] {
+    background-image: url(../images/offsite_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center right 5%;
+    background-size: 14px;
+    padding-inline-end: 50px;
+}
+
+small {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: var(--backgroundColor);
+    font-size: 0.7em;
+}
+
+@media screen and (min-width:768px) {
+    .mobile {
+        display: inline-block;
+    }
+
+    #booknow {
+        display: none;
+        background-color: whitesmoke;
+        border: double 1px #342809;
+    }
+
+    .hover a:hover {
+        background-color: var(--fontColor);
+        color: whitesmoke;
+    }
+
+    section {
+        font-size: 0.9em;
+    }
+
+    section nav ul {
+        border: double 1px #342809;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 3fr repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .div3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .div4 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    .div5 {
+        grid-area: 1 / 5 / 2 / 6;
+    }
+
+    .div6 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div7 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .div8 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .div9 {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    .div10 {
+        grid-area: 2 / 5 / 3 / 6;
+    }
+
+    .div11 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div12 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .div13 {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+
+    .div14 {
+        grid-area: 3 / 4 / 4 / 5;
+    }
+
+    .div15 {
+        grid-area: 3 / 5 / 4 / 6;
+    }
+
+    .div16 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .div17 {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .div18 {
+        grid-area: 4 / 3 / 5 / 4;
+    }
+
+    .div19 {
+        grid-area: 4 / 4 / 5 / 5;
+    }
+
+    .div20 {
+        grid-area: 4 / 5 / 5 / 6;
+    }
+
+    .back {
+        background-color: white;
+    }   
+}
+
+/*Addtional css for images on the other 3 pages*/
+main h2 {
+    text-align: center;
+}
+
+figcaption {
+    margin-left: 0.5vw;
+    font-size: 0.8em;
+}
+
+.align {
+    margin-left: 5vw;
+}
+
+.sizeMV {
+    height: 18vw;
+    width: 18vw;
+
+}
+
+.sizeImg {
+    height: 12vw;
+    width: 12vw;
+}
+
+.sizeMainPic {
+    height: 20vw;
+    width: 20vw;
+}
+
+#footerMargin {
+    margin-top: 8%;
+}
+
+#fleks {
+    display: flex;
+    flex-flow: wrap;
+}
+
+div[class="div2 back"],
+[class="div3 back"],
+[class="div4 back"],
+[class="div5 back"],
+[class="div7 back"],
+[class="div8 back"],
+[class="div9 back"],
+[class="div10 back"],
+[class="div12 back"],
+[class="div13 back"],
+[class="div14 back"],
+[class="div15 back"],
+[class="div17 back"],
+[class="div18 back"],
+[class="div19 back"] {
+    background-color: white;
+}
+
+@media screen and (max-width:768px) {
+    label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.9em;
+    }
+
+    form {
+        display: grid;
+        align-items: baseline;
+    }
+
+    input,
+    select {
+        block-size: 2em;
+        max-inline-size: fit-content;
+
+    }
+
+    input:focus {
+        border: 3px solid var(--fontColor);
+    }
+
+    input,
+    fieldset,
+    select,
+    div,
+    button {
+        border-radius: 7px;
+    }
+
+    input[type=radio][type=checkbox],
+    input+label {
+        vertical-align: middle;
+    }
+
+    button[type=submit] {
+        border: 3px solid var(--fontColor);
+    }
+
+    input:not([type=radio], [type=checkbox]),
+    fieldset,
+    select {
+        margin-block-end: 15px;
+    }
+
+    .formbox {
+        border: 3px solid var(--backgroundColor);
+    }
+
+}
