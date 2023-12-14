@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/blackcameraicon.png">
     <link href="./styles/site.css" rel="stylesheet">
-    <link href="./styles/contactus.css" rel="stylesheet">
     <title>Contact Us</title>
 </head>
+
 <body>
     <div id="wrapper">
         <header>
@@ -27,7 +27,8 @@
                 <li class="mobile hover"><a href="./booknow">Book Now</a></li>
                 <li class="mobile hover"><a href="./contactus">Contact Us</a></li>
                 <li class="mobile hover"><a href="./testimonials">Testimonials</a></li>
-                <li class="mobile hover"><a href="./policy">Policy</a></li>
+                <li class="mobile hover"><a href="./operation.html">Operation</a></li>
+                <li class="mobile hover"><a href="./links">Links</a></li>
             </ul>
         </nav>
         <main>
@@ -36,63 +37,38 @@
                     Contact us today!
                 </h2>
                 <form action="booked.html" method="get" name="book" id="book">
-                    <div class="item1">
-                        <label for="name">Full Name</label>
-                    </div>
-                    <div class="item2">
-                        <input type="text" name="name" id="name" placeholder="John Casino" size="60" required>
-                    </div>
-                   <div class="item3">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Casino" size="60" required>
                     <label for="email">Email</label>
-                   </div>
-                   <div class="item4">
                     <input type="email" name="email" id="email" placeholder="john.casino@gmail.com" size="60" required>
-                   </div>
-                    <div class="item5">
-                        <label for="phone">Phone Number</label>
-                    </div>
-                    <div class="item6">
-                        <input type="tel" name="phone" id="phone" placeholder="(819) 229-1147" size="30">
-                    </div>
-                    <div class="item7">
-                        <label for="city">City</label>
-                    </div>
-                    <div class="item8">
-                        <input type="text" name="city" id="city" placeholder="Ottawa" required>
-                    </div>
-                    <div class="item9">
-                        <label for="province">Province</label>
-                    </div>
-                    <div class="item10">
-                        <select name="provinces" id="province">
-                            <option value="">Please choose a province</option>
-                            <option value="">Alberta</option>
-                            <option value="">British Columbia</option>
-                            <option value="">Manitoba</option>
-                            <option value="">New Brunswick</option>
-                            <option value="">Newfoundland and Labrador</option>
-                            <option value="">Nova Scotia</option>
-                            <option value="">Ontario</option>
-                            <option value="">Prince Edward Island</option>
-                            <option value="">Quebec</option>
-                            <option value="">Saskatchewan</option>
-                        </select>
-                    </div>
-                   <div class="item11">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="(819) 229-1147" size="30">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" placeholder="Ottawa" required>
+                    <label for="province">Province</label>
+                    <select name="provinces" id="province">
+                        <option value="">Please choose a province</option>
+                        <option value="">Alberta</option>
+                        <option value="">British Columbia</option>
+                        <option value="">Manitoba</option>
+                        <option value="">New Brunswick</option>
+                        <option value="">Newfoundland and Labrador</option>
+                        <option value="">Nova Scotia</option>
+                        <option value="">Ontario</option>
+                        <option value="">Prince Edward Island</option>
+                        <option value="">Quebec</option>
+                        <option value="">Saskatchewan</option>
+                    </select>
                     <label for="postalcode">Postal Code</label>
-                   </div>
-                   <div class="item12">
                     <input type="text" name="postalcode" id="postalcode" placeholder="X1X 3X4" required>
-                   </div>
-                   <div>
                     <fieldset>
                         <legend>
                             What services are you interested in?
                         </legend>
                         <input type="checkbox" id="model" name="model">
                         <label for="model">Models</label>
-                        <input type="checkbox" id="photograhers" name="photograhers">
-                        <label for="photograhers">Photograhers</label>
+                        <input type="checkbox" id="photographers" name="photographers">
+                        <label for="photographers">Photographers</label>
                         <input type="checkbox" id="videographers" name="videographers">
                         <label for="videographers">Videographers</label>
                         <input type="checkbox" id="member" name="member">
@@ -101,7 +77,7 @@
                         <label for="other">Other</label>
                     </fieldset>
                     <fieldset>
-                        <legend>Please tell us a little more about how we can help</legend>
+                        <legend>Briefly describe how we can help you</legend>
                         <textarea id="self" name="textarea" rows="6" cols="80"
                             placeholder="Write something here..."></textarea>
                     </fieldset>
@@ -112,12 +88,9 @@
                         <label for="yes">Yes</label>
                         <input type="radio" id="no" name="coms">
                         <label for="no">No</label>
-                        <br>
-                        <br>
                     </fieldset>
                     <button type="submit">Submit Form</button>
                     <button type="reset">Clear</button>
-                   </div>  
                 </form>
             </section>
         </main>
@@ -132,7 +105,8 @@
                     <li><a href="./booknow">Book Now</a></li>
                     <li><a href="./contactus">Contact Us</a></li>
                     <li><a href="./testimonials">Testimonials</a></li>
-                    <li><a href="./policy">Policy</a></li>
+                    <li><a href="./operation.html">Operation</a></li>
+                    <li><a href="./links">Links</a></li>
                 </ul>
             </nav>
             <p>
@@ -147,7 +121,7 @@
             </p>
             <small>&copy; Copyright 2023. Copyright &copy; 2023, KLICK. </small>
         </footer>
-        </div>
+    </div>
 </body>
 
 </html>

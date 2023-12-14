@@ -33,7 +33,7 @@ h2 {
     text-decoration: underline;
 }
 
-h3 {
+.photographersh3 {
     text-align: center;
     padding-left: 25vw;
     padding-top: 2vw;
@@ -297,10 +297,43 @@ small {
 
     .back {
         background-color: white;
-    }   
+    } 
+
+    .formbox{
+        display: grid;
+        place-items: center;
+    
+    }
+    form {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        gap: 10px;
+    }
+    fieldset{
+        grid-column: 1/ span 2;
+    }
+    input,
+    fieldset,
+    select,
+    button {
+        border-radius: 7px;
+    }
+    button[type=reset]{
+        max-width: 18%;
+    }
+    button[type=submit]{
+       max-width: 70%;
+    }
+    input:not([type=checkbox],[type=radio],button),select{
+       margin-inline-end: 50%;
+    }
+    label:not(fieldset>label)::after {
+        content: ":";
+    }
+    
 }
 
-/*Addtional css for images on the other 3 pages*/
+/*Addtional css for images on the photographer, models and videographer pages*/
 main h2 {
     text-align: center;
 }
@@ -357,53 +390,16 @@ div[class="div2 back"],
     background-color: white;
 }
 
-@media screen and (max-width:768px) {
-    label {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 0.9em;
-    }
-
-    form {
-        display: grid;
-        align-items: baseline;
-    }
-
-    input,
-    select {
-        block-size: 2em;
-        max-inline-size: fit-content;
-
-    }
-
-    input:focus {
-        border: 3px solid var(--fontColor);
-    }
-
-    input,
-    fieldset,
-    select,
-    div,
-    button {
-        border-radius: 7px;
-    }
-
-    input[type=radio][type=checkbox],
-    input+label {
-        vertical-align: middle;
-    }
-
-    button[type=submit] {
-        border: 3px solid var(--fontColor);
-    }
-
-    input:not([type=radio], [type=checkbox]),
-    fieldset,
-    select {
-        margin-block-end: 15px;
-    }
-
-    .formbox {
-        border: 3px solid var(--backgroundColor);
-    }
-
+/*CSS FOR THE FROM ON THE CONTACT US HTML*/
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
 }
+@media screen and (max-width:768px){
+    label, input:not([type=checkbox],[type=radio]), select{
+        display: block;
+    }
+}
+
+
+
