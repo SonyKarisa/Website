@@ -180,6 +180,14 @@ small {
     color: var(--backgroundColor);
     font-size: 0.7em;
 }
+.cssIconHtmlDiv{
+    margin-left: 35%;
+}
+.cssHtmlIcon{
+    width:15vw;
+    height: 8vw;
+   
+}
 
 @media screen and (min-width:768px) {
     .mobile {
