@@ -23,7 +23,7 @@ header {
     padding: 2px 0;
 }
 
-header>img {
+header a >img {
     height: 5vmax;
     width: 14vmax;
 }
