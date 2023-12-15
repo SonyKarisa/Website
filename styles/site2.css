@@ -221,5 +221,6 @@ tbody td a{
     display: block;
     width: 50%;
     margin: auto;
+    border: solid var(--backgroundColor);
    
   }
