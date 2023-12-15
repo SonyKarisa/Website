@@ -278,6 +278,7 @@ tbody td a {
 video {
     display: block;
     width: 25%;
+    height: 25%;
     margin: auto;
     border: solid var(--backgroundColor);
 
