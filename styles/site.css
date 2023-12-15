@@ -9,6 +9,10 @@ body {
 :root {
     --backgroundColor: #342809;
     --fontColor: #FB9902;
+    --secondaryBackGroundColor:white;
+    --fontSize:1em;
+    --backgroundImage: url(../images/floral.jpg); 
+    --borderRadius:7px; 
 }
 
 header {
@@ -29,8 +33,7 @@ header>h1 {
 }
 
 h2 {
-    font-size: 1.2em;
-    text-decoration: underline;
+    font-size: 1.5em;
 }
 
 .photographersh3 {
@@ -38,7 +41,7 @@ h2 {
     padding-left: 25vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    background-color: white;
+    background-color: var(--secondaryBackGroundColor);
 }
 
 .hcolorone {
@@ -49,13 +52,9 @@ h2 {
     color: var(--fontColor);
 }
 
-main {
-    max-height: 80%;
-}
-
 #wrapper>nav {
     inline-size: 100%;
-    background-color: white;
+    background-color: var(--secondaryBackGroundColor);
     padding: 2px 0;
     display: flex;
     flex-flow: row wrap;
@@ -65,7 +64,7 @@ main {
 
 a::selection {
     color: var(--fontColor);
-    background-color: white;
+    background-color: var(--secondaryBackGroundColor);
 }
 
 nav a {
@@ -79,7 +78,7 @@ nav a {
 nav ul li {
 
     display: inline-block;
-    padding-inline: 1em;
+    padding-inline: var(--fontSize);
     list-style-type: none;
 }
 
@@ -88,18 +87,17 @@ nav ul li {
 }
 
 .para1 {
-    font-size: 1em;
+    font-size: var(--fontSize);
     max-width: 82%;
     margin-left:10px;
     margin-top: 10px;
     max-inline-size: 40%;
     padding: 10px;
-    
     background-color:bisque;
-    box-shadow: 5px 10px 18px #342809;
+    box-shadow: 5px 10px 18px var(--backgroundColor);
 }
 .para2{
-    font-size: 1em;
+    font-size: var(--fontSize);
     max-width: 82%;
     margin: auto;
     margin-top: 40px;
@@ -109,7 +107,7 @@ nav ul li {
     padding-left: 15px;
     margin-left: 41%;
     background-color:bisque;
-    box-shadow: 5px 10px 18px #342809;
+    box-shadow: 5px 10px 18px var(--backgroundColor);
 }
 
 .indexImg{
@@ -121,8 +119,8 @@ nav ul li {
     margin-top: 24px;
 }
 main{
-    background-image: url(../images/7648086.jpg);
-    
+    background-image: var(--backgroundImage);
+    background-size: cover;
 }
 
 main nav {
@@ -131,8 +129,8 @@ main nav {
 }
 
 main nav ul li a {
-    border: #342809 solid 5px;
-    background-color: white;
+    border: var(--backgroundColor) solid 5px;
+    background-color: var(--secondaryBackGroundColor);
 }
 
 figure img {
@@ -296,18 +294,21 @@ small {
     }
 
     .back {
-        background-color: white;
+        background-color: var(--secondaryBackGroundColor);
     } 
 
     .formbox{
         display: grid;
         place-items: center;
-    
     }
     form {
         display: grid;
         grid-template-columns: 20% 1fr;
         gap: 10px;
+        border: 2px solid;
+        padding: 10px;
+        background-color: #FFF1DC;
+        border-radius: var(--borderRadius);
     }
     fieldset{
         grid-column: 1/ span 2;
@@ -316,7 +317,7 @@ small {
     fieldset,
     select,
     button {
-        border-radius: 7px;
+        border-radius: var(--borderRadius);
     }
     button[type=reset]{
         max-width: 18%;
@@ -330,12 +331,72 @@ small {
     label:not(fieldset>label)::after {
         content: ":";
     }
-    
+    label, input, select, fieldset{
+        margin-top: 5px;
+        }  
+        input[type=text],[type=email]{
+            width: 50%;
+            height:20px;
+            }
+        input[type=tel]{
+            width: 25%;
+            height:20px;
+        }
+        select{
+            height: 30px;
+            width:40%
+        }
+    textarea{
+        width: 99%;
+    }
+    /*keyframe animation for links page*/
+    .linksDiv{
+        margin-left: 40%; 
+     }
+     .ulCenter{
+         text-align: center;  
+     }
+     .noStyle{
+         list-style: none;  
+     }
+     .diffBackImage{
+         background-image: url(../images/flower.jpg);
+     }
+     .withStyle{
+         list-style: inside center url(../images/cameraicon2.png);   
+     }
+     .noUnderline{
+         text-decoration: none;
+         display: inline-block;
+         padding: 10px 20px;
+         text-decoration: none;
+         position: relative;
+         overflow: hidden;
+         transition: background-color 0.3s;
+     }
+     .listHover:hover{
+         animation: coolLinkAnimation 1s ease-in-out infinite;
+     }
+     @keyframes coolLinkAnimation {
+         0% {
+             transform: scale(1);
+         }
+         50% {
+             transform: scale(1);
+             background-color: var(--backgroundColor);
+             color: white;
+         }
+         100% {
+             transform: scale(1);
+         }
+     }
 }
 
 /*Addtional css for images on the photographer, models and videographer pages*/
 main h2 {
     text-align: center;
+    background-color: var(--backgroundColor);
+    color:var(--secondaryBackGroundColor);
 }
 
 figcaption {
@@ -347,58 +408,60 @@ figcaption {
     margin-left: 5vw;
 }
 
-.sizeMV {
-    height: 18vw;
-    width: 18vw;
-
-}
-
-.sizeImg {
-    height: 12vw;
-    width: 12vw;
-}
-
-.sizeMainPic {
-    height: 20vw;
-    width: 20vw;
-}
-
-#footerMargin {
-    margin-top: 8%;
-}
-
-#fleks {
-    display: flex;
-    flex-flow: wrap;
-}
-
-div[class="div2 back"],
-[class="div3 back"],
-[class="div4 back"],
-[class="div5 back"],
-[class="div7 back"],
-[class="div8 back"],
-[class="div9 back"],
-[class="div10 back"],
-[class="div12 back"],
-[class="div13 back"],
-[class="div14 back"],
-[class="div15 back"],
-[class="div17 back"],
-[class="div18 back"],
-[class="div19 back"] {
-    background-color: white;
-}
-
 /*CSS FOR THE FROM ON THE CONTACT US HTML*/
 label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
+    font-size: var(--fontSize);
 }
 @media screen and (max-width:768px){
+    
+    .para1{
+        font-size: var(--fontSize);
+        padding: 10px;
+        max-width: 93%;   
+    }
+    .indexImg{
+        display: none;
+    }
+    .para2{
+        font-size: var(--fontSize);
+        padding: 10px;
+        max-width: 93%;
+        margin-inline-start: 10px;
+    }
+    form{
+        gap: 10px;
+        border: 2px solid;
+        padding: 10px;
+        background-color: #FFF1DC;
+    }
+
     label, input:not([type=checkbox],[type=radio]), select{
         display: block;
     }
+
+    label, input, select, fieldset{
+        margin-top: 5px;
+        }
+    input[type=text],[type=email]{
+        width: 50%;
+        height:20px;
+        }
+    input[type=tel]{
+        width: 25%;
+        height:20px;
+    }
+    select{
+        height: 30px;
+        width:40%
+    }
+    textarea{
+            width: 99%;
+        } 
+    .displayGridForModels{
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
 }
 
 
