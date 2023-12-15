@@ -216,6 +216,9 @@ tbody td a{
         margin-right:10% ;
         background-color: bisque;
      }
+     .hoursSmallerView{
+        display: none;
+     }
   }
   video{
     display: block;
